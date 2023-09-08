@@ -1,0 +1,41 @@
+baseURL: https://blog.zprde.cn/
+languageCode: en-us
+title: Adrian's Blog
+theme: paper-mod
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+# config for paper-mod
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+params:
+  # defaultTheme: light
+  # defaultTheme: dark
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  homeInfoParams:
+    Title: Adrian's Blog
+    Content: Can do nothing.
+  socialIcons: # optional
+  - name: github
+    url: https://github.com/zprde
