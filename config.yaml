@@ -13,7 +13,7 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
+        - name: Archives
           url: archives
           weight: 5
         - name: Search
@@ -22,6 +22,9 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
+        - name: About
+          url: about/
+          weight: 11
 
 # config for paper-mod
 outputs:
