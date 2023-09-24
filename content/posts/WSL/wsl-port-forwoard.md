@@ -9,8 +9,8 @@ tags:
 # 基本原理
 可以通过Windows端代理口功能将WSL2中的端口通过Windows的IP对外暴露。核心命令:
 ```shell
-netsh interface portproxy add v4tov4 \
-listenaddress=[WIN_IP] listenport=[WIN_PORT] \
+netsh interface portproxy add v4tov4 `
+listenaddress=[WIN_IP] listenport=[WIN_PORT] `
 connectaddress=[WSL_IP] connectport=[WSL_PORT]
 ```
 ## 原始访问方式
@@ -23,8 +23,8 @@ ssh user_name@localhost
 ## 端口代理
 如果想在Windows外访问WSL的SSH服务，我可以们尝试在Windows的Powershell中执行一命令下
 ```shell
-netsh interface portproxy add v4tov4 \
-listenaddress=0.0.0.0 listenport=2222 \
+netsh interface portproxy add v4tov4 `
+listenaddress=0.0.0.0 listenport=2222 `
 connectaddress=localhost connectport=22
 ```
 
